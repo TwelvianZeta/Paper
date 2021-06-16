@@ -15,6 +15,7 @@ jobs:
             matrix:
                 java: [16, 8]
             fail-fast: true
+            os: [ubuntu-20.04, windows-latest]
         steps:
             - uses: actions/checkout@v2
             - name: JDK ${{ matrix.java }}
